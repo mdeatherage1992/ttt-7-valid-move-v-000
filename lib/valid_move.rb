@@ -1,14 +1,10 @@
-def valid_move?(num)
-  if position_taken? == false && (num + 1) < 9
+def valid_move?(board,index)
+  if position_taken?(board,index) == false && (num + 1) < 9
     true
   else
     false
   end
 end
-
-
-
-
 
 def position_taken?(board,index)
   val1 = board[index]
